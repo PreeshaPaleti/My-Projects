@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paleti Preesha | AI Engineer Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #161b22;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    header h1 { color: #58a6ff; font-size: 1.5rem; font-weight: 600; }
+    nav a {
+      color: #c9d1d9; text-decoration: none; margin-left: 18px; font-weight: 500;
+    }
+    nav a:hover { color: #58a6ff; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 10% 40px;
+      background: linear-gradient(145deg, #0d1117, #161b22);
+    }
+
+    .profile-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 20px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      padding: 6px;
+      background: radial-gradient(circle at 30% 20%, rgba(88,166,255,0.08), transparent 30%),
+                  linear-gradient(135deg, rgba(88,166,255,0.12), transparent 70%);
+      transition: transform .28s ease;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      border: 3px solid rgba(88,166,255,0.95);
+      box-shadow: 0 8px 30px rgba(88,166,255,0.14);
+      transition: transform .28s ease, box-shadow .28s ease;
+      background-color: #222;
+    }
+
+    .profile-image-container:hover { transform: translateY(-6px) scale(1.02); }
+    .profile-image-container:hover .profile-image {
+      transform: scale(1.04);
+      box-shadow: 0 12px 40px rgba(88,166,255,0.24);
+    }
+
+    .hero h2 { color: #58a6ff; font-size: 2rem; margin-top: 14px; }
+    .hero h3 { color: #8b949e; font-size: 1.05rem; margin-top: 8px; }
+    .hero p {
+      margin: 20px auto 0;
+      color: #c9d1d9;
+      max-width: 820px;
+      font-size: 1rem;
+    }
+
+    .buttons { margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 8px;
+      border: 1px solid #58a6ff;
+      color: #58a6ff;
+      background: transparent;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .22s ease, color .22s ease, transform .12s ease;
+    }
+    .btn:hover { background:#58a6ff; color:#0d1117; transform:translateY(-3px); }
+
+    section { padding: 64px 10%; border-bottom: 1px solid #21262d; }
+    .section-title {
+      color: #58a6ff; font-size: 1.6rem; margin-bottom: 18px; text-transform: uppercase;
+      position: relative;
+    }
+    .section-title::after { content: ""; width: 56px; height: 3px; background: #58a6ff; position: absolute; bottom: -8px; left: 0; border-radius:2px; }
+
+    .content-card {
+      background: #161b22; border-radius: 10px; padding: 22px; box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+      transition: transform .22s ease;
+    }
+    .content-card:hover { transform: translateY(-6px); }
+
+    ul { margin-left: 18px; line-height: 1.8; color: #dbe6f8; }
+    p.lead { color: #c9d1d9; max-width: 820px; margin: 8px auto 0; }
+
+    footer {
+      background: #161b22; color: #8b949e; text-align:center; padding: 28px 6%;
+    }
+    footer a { color: #58a6ff; text-decoration:none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 820px) {
+      header { padding: 14px 5%; }
+      .hero { padding: 56px 6% 30px; }
+      .profile-image-container { width: 160px; height: 160px; }
+      .hero h2 { font-size: 1.6rem; }
+      section { padding: 44px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paleti Preesha</h1>
+    <nav>
+      <a href="#objective">Objective</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="profile-image-container" aria-hidden="false">
+      <img class="profile-image" src="https://drive.google.com/file/d/1rnrZDWuWLp2Gc9GAx2hv_0Y_XAtHx41t/view?usp=sharing" alt="Paleti Preesha Profile Photo" />
+    </div>
+
+    <h2>AI Engineer | Generative AI | LLMs | Machine Learning</h2>
+    <h3>Eluru, India</h3>
+    <p>
+      Passionate about building intelligent, data-driven AI solutions and applying advanced models to solve real-world problems.
+      Eager to innovate, collaborate, and contribute to a dynamic AI/ML environment.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="#contact">Hire Me</a>
+      <button class="btn" id="downloadResumeBtn">Download Resume</button>
+    </div>
+  </section>
+
+  <section id="objective">
+    <h2 class="section-title">Career Objective</h2>
+    <div class="content-card">
+      <p>
+        Aspiring AI Engineer with hands-on experience in Python, Generative AI, LLMs, and Machine Learning.
+        Passionate about building intelligent, data-driven solutions, fine-tuning models, and applying AI research to real-world problems.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="content-card">
+      <p><strong>SRM University</strong>, Chennai, India<br>
+      <em>Master of Computer Application in Generative AI (2025–2027)</em></p><br>
+      <p><strong>Vignan University</strong>, Guntur, India<br>
+      <em>Bachelor of Computer Application (2022–2025)</em><br>CGPA: 8.4</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="content-card">
+      <p><strong>Turing Enterprises Inc.</strong>, California, USA<br>
+      <em>LLM Python Engineer | Remote (Sep 2024 – Present)</em></p>
+      <ul>
+        <li>Spearheaded a team of 10 engineers to design and fine-tune LLMs for advanced NLP tasks.</li>
+        <li>Implemented RLHF and RLEF pipelines to enhance model accuracy and alignment.</li>
+        <li>Contributed to vulnerability dataset creation to train AI models on detecting and fixing code flaws.</li>
+        <li>Created agent completion datasets featuring realistic multi-turn conversations for assistant training.</li>
+        <li>Ensured dataset quality, consistency, and high-performance execution across AI projects.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="content-card">
+      <p><strong>Programming Languages:</strong> Python, Java, SQL, HTML, CSS, C#</p>
+      <p><strong>Core CS Fundamentals:</strong> Data Structures, Algorithms, OOP, Operating Systems, DBMS, REST API</p>
+      <p><strong>AI/ML Expertise:</strong> LLMs, Model Fine-Tuning & Evaluation, RLHF, RLEF</p>
+      <p><strong>Frameworks/Tools:</strong> Pandas, NumPy, Matplotlib, Flask, FastAPI, Git, VS Code</p>
+      <p><strong>Platforms:</strong> Linux/Unix, iOS, Windows</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="content-card">
+      <p><strong>Intelligent Excuse Generator — AI-Powered Excuse Creation System (Aug 2025)</strong></p>
+      <p>Developed an AI-powered system that generates creative excuses with text, voice, and visuals using Hugging Face, Gradio, and Python PIL. Integrated tone and context personalization for realistic outputs.</p><br>
+      <p><strong>Credit Card Fraud Detection (Aug 2024)</strong></p>
+      <p>Built a real-time fraud detection system using advanced ML models with feature engineering and continuous feedback loops. Achieved 91% accuracy, enhancing reliability and detection performance.</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="content-card">
+      <ul>
+        <li>Python Basic by HackerRank</li>
+        <li>Artificial Intelligence Fundamentals by IBM</li>
+        <li>Python Essentials by Cisco</li>
+        <li>SQL Advanced by HackerRank</li>
+        <li>MongoDB Python Developer Path</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="content-card">
+      <p><strong>Location:</strong> Eluru, India</p>
+      <p><strong>Phone:</strong> +91 9515314559</p>
+      <p><strong>Email:</strong> <a href="mailto:preeshapaleti@gmail.com" style="color:#58a6ff;">preeshapaleti@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" style="color:#58a6ff;">LinkedIn Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Paleti Preesha | Designed using HTML, CSS & JS</p>
+  </footer>
+
+  <script>
+    const resumeFilename = "https://drive.google.com/file/d/15zeNKix5mL1oZ5UeRu61Jpig1PQF8wPE/view?usp=sharing";
+
+    document.getElementById("downloadResumeBtn").addEventListener("click", function () {
+      const a = document.createElement("a");
+      a.href = resumeFilename;
+      a.download = resumeFilename.includes("/") ? resumeFilename.split("/").pop() : resumeFilename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(sec => {
+      sec.style.opacity = 0;
+      sec.style.transform = 'translateY(20px)';
+      sec.style.transition = 'all .8s ease';
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
